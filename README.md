@@ -3,7 +3,7 @@
 
 ---
 
-## 📋 Datos del repositorio
+##  Datos del repositorio
 
 | Campo | Detalle |
 |-------|---------|
