@@ -1,0 +1,290 @@
+/* ══════════════════════════════════════════════════════
+   SGI InkaRetail — Login · login.css
+   ══════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap');
+
+/* Variables */
+:root {
+  --navy:      #1B2A4A;
+  --navy-h:    #2E4172;
+  --rojo:      #C0392B;
+  --rojo-h:    #A93226;
+  --gris:      #F4F5F7;
+  --gris2:     #E0E2E7;
+  --texto:     #1A1A2E;
+  --texto2:    #6B7280;
+  --verde:     #1E8449;
+  --verde-bg:  #D5F5E3;
+  --rojo-bg:   #FADBD8;
+  --shadow:    0 8px 40px rgba(0,0,0,0.14);
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1B2A4A 0%, #2E4172 50%, #C0392B 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* ── Tarjeta ─────────────────────────────────────────── */
+.page-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 440px;
+  overflow: hidden;
+}
+
+/* ── Encabezado ──────────────────────────────────────── */
+.card-top {
+  background: var(--navy);
+  text-align: center;
+  padding: 32px 24px 24px;
+}
+
+.logo-box {
+  width: 64px;
+  height: 64px;
+  background: var(--rojo);
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.brand {
+  font-family: 'Syne', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.brand-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 4px;
+}
+
+/* ── Tabs ────────────────────────────────────────────── */
+.tabs {
+  display: flex;
+  border-bottom: 2px solid var(--gris2);
+  background: var(--gris);
+}
+
+.tab {
+  flex: 1;
+  padding: 13px 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--texto2);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: color .2s, border-color .2s;
+}
+
+.tab:hover { color: var(--navy); }
+
+.tab.active {
+  color: var(--rojo);
+  border-bottom-color: var(--rojo);
+  font-weight: 600;
+}
+
+/* ── Panels ──────────────────────────────────────────── */
+.panel { display: none; padding: 28px 28px 24px; }
+.panel.active { display: block; }
+
+/* ── Campos ──────────────────────────────────────────── */
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 7px;
+}
+
+.hint {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--texto2);
+  display: block;
+  margin-top: 2px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.5px solid var(--gris2);
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: var(--texto);
+  background: var(--gris);
+  outline: none;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+  appearance: none;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: var(--navy);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(27,42,74,0.08);
+}
+
+.field input.err  { border-color: var(--rojo); background: #FFF5F5; }
+.field input.ok   { border-color: var(--verde); }
+
+/* ── Botones ─────────────────────────────────────────── */
+.btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background .2s, transform .1s;
+}
+.btn:active { transform: scale(0.98); }
+
+.btn-navy { background: var(--navy); color: #fff; }
+.btn-navy:hover { background: var(--navy-h); }
+
+.btn-red  { background: var(--rojo); color: #fff; }
+.btn-red:hover { background: var(--rojo-h); }
+
+/* ── Mensajes ────────────────────────────────────────── */
+.msg {
+  display: none;
+  margin-top: 14px;
+  padding: 11px 15px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 500;
+  border-left: 4px solid;
+  line-height: 1.4;
+  animation: fadeUp .3s ease;
+}
+.msg.show { display: block; }
+.msg.ok   { background: var(--verde-bg); border-color: var(--verde); color: var(--verde); }
+.msg.err  { background: var(--rojo-bg);  border-color: var(--rojo);  color: var(--rojo); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Link de cambio de tab ───────────────────────────── */
+.switch-link {
+  text-align: center;
+  font-size: 12px;
+  color: var(--texto2);
+  margin-top: 14px;
+}
+.switch-link a {
+  color: var(--navy);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.switch-link a:hover { text-decoration: underline; }
+
+/* ── Overlay de bienvenida ───────────────────────────── */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadeIn .3s ease;
+}
+.overlay.show { display: flex; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.welcome-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 36px 32px;
+  text-align: center;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  animation: popIn .35s cubic-bezier(.175,.885,.32,1.275);
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.welcome-icon {
+  font-size: 52px;
+  margin-bottom: 14px;
+}
+
+.welcome-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.welcome-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--texto);
+  margin-bottom: 4px;
+}
+
+.welcome-rol {
+  font-size: 13px;
+  color: var(--texto2);
+}
+
+.welcome-divider {
+  height: 1px;
+  background: var(--gris2);
+  margin: 18px 0;
+}
+
+.welcome-brand {
+  font-size: 12px;
+  color: var(--texto2);
+}

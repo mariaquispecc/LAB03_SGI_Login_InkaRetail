@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SGI InkaRetail — Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+
+  <div class="page-wrap">
+    <div class="card" id="card-login">
+
+      <!-- Encabezado de la tarjeta -->
+      <div class="card-top">
+        <div class="logo-box">🏪</div>
+        <h1 class="brand">InkaRetail SGI</h1>
+        <p class="brand-sub">Sistema de Gestión de Inventario</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active" id="tab-login-btn"    onclick="switchTab('login')">
+          🔐 Iniciar Sesión
+        </button>
+        <button class="tab"        id="tab-registro-btn" onclick="switchTab('registro')">
+          📝 Registrarse
+        </button>
+      </div>
+
+      <!-- ══ PANEL LOGIN ══ -->
+      <div class="panel active" id="panel-login">
+        <div class="field">
+          <label for="l-email">Correo electrónico</label>
+          <input id="l-email" type="email" placeholder="usuario@inkaretail.com" autocomplete="off"/>
+        </div>
+        <div class="field">
+          <label for="l-pass">Contraseña</label>
+          <input id="l-pass" type="password" placeholder="••••••••"/>
+        </div>
+        <button class="btn btn-navy" onclick="doLogin()">Iniciar sesión</button>
+        <div class="msg" id="msg-login"></div>
+        <p class="switch-link">
+          ¿No tienes cuenta?
+          <a onclick="switchTab('registro')">Regístrate aquí</a>
+        </p>
+      </div>
+
+      <!-- ══ PANEL REGISTRO ══ -->
+      <div class="panel" id="panel-registro">
+        <div class="field">
+          <label for="r-nombre">Nombre completo</label>
+          <input id="r-nombre" type="text" placeholder="Ej: Carlos Quispe Flores"/>
+        </div>
+        <div class="field">
+          <label for="r-email">Correo electrónico</label>
+          <input id="r-email" type="email" placeholder="carlos.quispe@inkaretail.com" autocomplete="off"/>
+        </div>
+        <div class="field">
+          <label for="r-pass">
+            Contraseña
+            <span class="hint">(mín. 8 caracteres, una mayúscula, un número)</span>
+          </label>
+          <input id="r-pass" type="password" placeholder="••••••••"/>
+        </div>
+        <div class="field">
+          <label for="r-pass2">Confirmar contraseña</label>
+          <input id="r-pass2" type="password" placeholder="••••••••"/>
+        </div>
+        <div class="field">
+          <label for="r-rol">Rol en el sistema</label>
+          <select id="r-rol">
+            <option value="">-- Selecciona un rol --</option>
+            <option value="Administrador">Administrador</option>
+            <option value="Vendedor">Vendedor</option>
+            <option value="Jefe de Almacén">Jefe de Almacén</option>
+          </select>
+        </div>
+        <button class="btn btn-red" onclick="doRegistro()">Crear cuenta</button>
+        <div class="msg" id="msg-registro"></div>
+        <p class="switch-link">
+          ¿Ya tienes cuenta?
+          <a onclick="switchTab('login')">Inicia sesión</a>
+        </p>
+      </div>
+
+    </div><!-- /card -->
+  </div><!-- /page-wrap -->
+
+  <!-- ══ VENTANA DE BIENVENIDA (popup) ══ -->
+  <div class="overlay" id="overlay" onclick="cerrarBienvenida()">
+    <div class="welcome-box" onclick="event.stopPropagation()">
+      <div class="welcome-icon">✅</div>
+      <h2 class="welcome-title">¡Bienvenido/a!</h2>
+      <p class="welcome-name"  id="welcome-name"></p>
+      <p class="welcome-rol"   id="welcome-rol"></p>
+      <div class="welcome-divider"></div>
+      <p class="welcome-brand">SGI Inventario — InkaRetail S.A.C.</p>
+      <button class="btn btn-navy" style="margin-top:20px;" onclick="cerrarBienvenida()">
+        Continuar →
+      </button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

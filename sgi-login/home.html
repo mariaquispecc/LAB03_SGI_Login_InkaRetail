@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SGI InkaRetail — Inicio</title>
+  <link rel="stylesheet" href="css/home.css"/>
+</head>
+<body>
+
+  <!-- ══ TOPBAR ══════════════════════════════════════════════ -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="topbar-logo">🏪</div>
+      <div>
+        <span class="topbar-brand">InkaRetail SGI</span>
+        <span class="topbar-sub">Sistema de Gestión de Inventario</span>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="user-chip">
+        <div class="user-avatar" id="nav-avatar"></div>
+        <div class="user-info-nav">
+          <span class="user-name-nav" id="nav-nombre"></span>
+          <span class="user-rol-nav"  id="nav-rol"></span>
+        </div>
+      </div>
+      <button class="btn-logout" onclick="cerrarSesion()">
+        🚪 Cerrar sesión
+      </button>
+    </div>
+  </header>
+
+  <!-- ══ CONTENIDO ═══════════════════════════════════════════ -->
+  <main class="main">
+
+    <!-- Saludo -->
+    <div class="saludo">
+      <h1 class="saludo-title">¡Hola, <span id="saludo-nombre"></span>! 👋</h1>
+      <p class="saludo-sub">Bienvenido/a al Sistema de Gestión de Inventario de InkaRetail S.A.C.</p>
+    </div>
+
+    <!-- Tarjetas de módulos -->
+    <div class="modules-grid">
+
+      <div class="module-card module-card--navy">
+        <div class="module-icon">📦</div>
+        <h3 class="module-title">Inventario</h3>
+        <p class="module-desc">Consulta y gestiona el stock de las 12 tiendas.</p>
+        
+      </div>
+
+      <div class="module-card module-card--rojo">
+        <div class="module-icon">🛒</div>
+        <h3 class="module-title">Ventas</h3>
+        <p class="module-desc">Registra ventas y genera cotizaciones con descuentos.</p>
+       
+      </div>
+
+      <div class="module-card module-card--verde">
+        <div class="module-icon">📊</div>
+        <h3 class="module-title">Reportes</h3>
+        <p class="module-desc">Visualiza métricas de stock y movimientos.</p>
+       
+      </div>
+
+      <div class="module-card module-card--ambar">
+        <div class="module-icon">⚙️</div>
+        <h3 class="module-title">Configuración</h3>
+        <p class="module-desc">Administra usuarios, roles y permisos del sistema.</p>
+       
+      </div>
+
+    </div>
+
+    <!-- Tabla de actividad reciente (demo) -->
+    <div class="section">
+      <h2 class="section-title">Actividad reciente</h2>
+      <div class="table-wrap">
+        <table class="activity-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Acción</th>
+              <th>Módulo</th>
+              <th>Usuario</th>
+              <th>Fecha</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Ingreso de stock — Laptop HP</td>
+              <td>Inventario</td>
+              <td>Ana Torres</td>
+              <td>10/05/2026 09:14</td>
+              <td><span class="badge badge--ok">Completado</span></td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Venta registrada — Monitor LG</td>
+              <td>Ventas</td>
+              <td>Carlos Quispe</td>
+              <td>10/05/2026 09:32</td>
+              <td><span class="badge badge--ok">Completado</span></td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td>Alerta stock bajo — Mouse Logitech</td>
+              <td>Inventario</td>
+              <td>Sistema</td>
+              <td>10/05/2026 10:05</td>
+              <td><span class="badge badge--warn">Pendiente</span></td>
+            </tr>
+            <tr>
+              <td>004</td>
+              <td>Cotización generada — Cliente Falabella</td>
+              <td>Ventas</td>
+              <td>Carlos Quispe</td>
+              <td>10/05/2026 10:48</td>
+              <td><span class="badge badge--ok">Completado</span></td>
+            </tr>
+            <tr>
+              <td>005</td>
+              <td>Reporte mensual exportado</td>
+              <td>Reportes</td>
+              <td>Lizbeth Jaico</td>
+              <td>10/05/2026 11:00</td>
+              <td><span class="badge badge--ok">Completado</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    InkaRetail S.A.C. · SGI Inventario · IS-489 Pruebas y Aseguramiento de Calidad · UNSCH 2026-I · Ing Lizbeth Jaico
+  </footer>
+
+  <script src="js/home.js"></script>
+</body>
+</html>
