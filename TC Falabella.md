@@ -32,3 +32,25 @@ Módulo final de conversión transaccional de alta seguridad. Comprende las sigu
 - Pasarela de facturación financiera: Captura y valida de forma cifrada la información de las tarjetas de crédito o débito, impidiendo el envío de datos en blanco o con formatos incorrectos.
 
 URL MATRIZ: https://docs.google.com/spreadsheets/d/1Vb3crPgEwhuOyzJvh5qdDSYKm6h83vPOsK3HTjXn150/edit?usp=sharing 
+
+
+CAPTURAS DE PANTALLA:
+
+Caso Válido:
+
+<img width="793" height="448" alt="image" src="https://github.com/user-attachments/assets/0fb51159-f8f8-4c27-88dd-a636c296e106" />
+
+
+Caso Inválido:
+
+<img width="751" height="382" alt="image" src="https://github.com/user-attachments/assets/696255f3-cd3d-4c36-8018-9c24c01fb1a4" />
+
+
+Edge Case:
+
+<img width="739" height="448" alt="image" src="https://github.com/user-attachments/assets/408a8b48-07c5-48be-aace-a7ed6280e0bb" />
+
+
+Caso de Valores Límites:
+
+<img width="1003" height="266" alt="image" src="https://github.com/user-attachments/assets/07d057bf-3c89-4087-b6f5-aaafcaff5613" />
