@@ -1,4 +1,4 @@
-UNIVERSIDAD NACIONAL DE SAN CRISTÓBAL DE HUAMANGA
+<img width="376" height="415" alt="image" src="https://github.com/user-attachments/assets/f368bf17-5bbc-4d59-902e-3217210a4d63" />UNIVERSIDAD NACIONAL DE SAN CRISTÓBAL DE HUAMANGA
 FACULTAD DE INGENIERÍA DE MINAS, GEOLOGÍA Y CIVIL
 ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS
 
@@ -20,3 +20,14 @@ B. Funcionalidad:Registro
 La funcionalidad de Registro permite a los usuarios crear una cuenta de forma segura ingresando un correo electrónico y contraseña. El sistema valida los datos proporcionados y, si son correctos, concede el registro en la base de datos. En caso de que las credenciales sean incorrectas, el sistema muestra un mensaje de error indicando que los datos no son válidos, sin permitir el registro.
 
 URL MATRIZ: https://docs.google.com/spreadsheets/d/1n2sfIuUuF4rQCkLUxeqQSt8bENgtyBY_ASDQ-F6cZdU/edit?usp=sharing 
+
+
+CAPTURAS DE PANTALLA: 
+Caso Válido:
+<img width="376" height="415" alt="image" src="https://github.com/user-attachments/assets/968c1974-44d9-4bd6-a941-83dc4b75b0ca" />
+
+Caso Inválido:
+<img width="445" height="548" alt="image" src="https://github.com/user-attachments/assets/65281437-908c-44c1-9322-69dddf2073b6" />
+
+Edge Case:
+<img width="550" height="686" alt="image" src="https://github.com/user-attachments/assets/4ba5348b-0fc8-4e88-a769-ec48c8464529" />
