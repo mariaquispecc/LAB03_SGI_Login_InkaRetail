@@ -23,11 +23,15 @@ URL MATRIZ: https://docs.google.com/spreadsheets/d/1n2sfIuUuF4rQCkLUxeqQSt8bENgt
 
 
 CAPTURAS DE PANTALLA: 
+
 Caso Válido:
+
 <img width="376" height="415" alt="image" src="https://github.com/user-attachments/assets/968c1974-44d9-4bd6-a941-83dc4b75b0ca" />
 
 Caso Inválido:
+
 <img width="445" height="548" alt="image" src="https://github.com/user-attachments/assets/65281437-908c-44c1-9322-69dddf2073b6" />
 
 Edge Case:
+
 <img width="550" height="686" alt="image" src="https://github.com/user-attachments/assets/4ba5348b-0fc8-4e88-a769-ec48c8464529" />
