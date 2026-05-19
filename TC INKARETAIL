@@ -19,4 +19,4 @@ La funcionalidad de Login permite a los usuarios acceder de forma segura a sus c
 B. Funcionalidad:Registro 
 La funcionalidad de Registro permite a los usuarios crear una cuenta de forma segura ingresando un correo electrónico y contraseña. El sistema valida los datos proporcionados y, si son correctos, concede el registro en la base de datos. En caso de que las credenciales sean incorrectas, el sistema muestra un mensaje de error indicando que los datos no son válidos, sin permitir el registro.
 
-URL MATRIZ: https://docs.google.com/spreadsheets/d/1n2sfIuUuF4rQCkLUxeqQSt8bENgtyBY_ASDQ-F6cZdU/edit?usp=sharing
+URL MATRIZ: https://docs.google.com/spreadsheets/d/1n2sfIuUuF4rQCkLUxeqQSt8bENgtyBY_ASDQ-F6cZdU/edit?usp=sharing 
